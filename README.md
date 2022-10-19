@@ -162,16 +162,42 @@ docker exec app bash
 - 특정 날짜와 시간을 입력하여 해당시간에 영업중인 의사 반환
   - 2022년 1월 11일 오후 3시 입력 결과
   - 2022년 1월 15일 오전 9시 입력 결과
+  
+  ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_1.png?raw=true)
+  ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_2.png?raw=true)
+  ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_3.png?raw=true)
+  ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_4.png?raw=true)
+  ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_5.png?raw=true)
+
+
 
 #### 진료요청
 - 진료 희망 날짜 시간
   - 환자가 진료가 이루어 지기를 희망하는 날짜와 시간
   - 의사가 영업시간이 아닌값이 들어오면 '의사의 영업시간이 아님' 을 주는 값 반환
+  
+    ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_6.png?raw=true)
+
 
 
 ### 진료요청 검색
   - 진료요청 정보 리스트 가져오기
   - 진료요청 수락 결과
+  
+  [ 시나리오 ] 
+    - 진료요청정보를 먼저 DB에 저장을 시킵니다 
+    
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_9.png?raw=true)
+
+  [ 시나리오2 ] 
+    - 의사가요청 정보를 확인하여 수학합니다 agree_status  -> False -> True로 변환
+    
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_8.png?raw=true)
+    
+  [ 시나리오3 ] 
+    - 변환된 결과를 가져와서 반영결과
+
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_10.png?raw=true)
 
 
 
