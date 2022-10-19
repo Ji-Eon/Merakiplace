@@ -11,7 +11,7 @@ doctor_router = DefaultRouter()
 
 urlpatterns = [
     path('', include(doctor_router.urls)),
-    path('search/doctor', views.StringSearchView.as_view(), name='DoctorSearch'),
+    path('search/', views.StringSearchView.as_view(), name='DoctorSearch'),
     path('search/date', views.DateSearchView.as_view(), name='DateSearch'),
     path('apply/', views.treatmentApplyView.as_view(), name='teatementApply'),
 
