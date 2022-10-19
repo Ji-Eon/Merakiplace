@@ -91,23 +91,61 @@ docker exec app bash
 
 
 ### Patient Model 및 설명
-
+ Patient( 환자 ) 
+  - patientname : 환자명
 
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/patient_model.png)
 
 
-
 ### Doctor Model 및 설명
 
+- Models
+- 아래 항목들은 Foreinkey를 이용하여 구성하였습니다.
+
+ Doctor( 의사 ) 
+  - doctorname : 의사명
+  - hospital : 병원명
+  - nonpay : 비급여항목
+  
+ DepertmentList( 진료과 )
+  
+  향후 데이터를 문자열로 저장 및 문자열 비교검색으로  인덱스검색을 최소화 할수 있도록 변형이 가능할거같습니다 list->str , 성능개선 향후 의견
+  - department1 : 진료과1
+  - department2 : 진료과2
+  - department3 : 진료과3
+
+ WeeklyTask( 주중 영업 및 시간 )
+ 
+ True / False Boolean 형태로 향후 Front에서 자유자재로 영업시간을 지정할 경우를 대비해보았습니다.
+  - task_monday : 월요일
+  - task_tuesday : 화요일
+  - task_wednesday : 수요일
+  - task_thursday : 목요일
+  - task_friday : 금요일
+  - task_saturday : 토요일
+  - task_sunday : 일요일
+  - start_time : 진료 시작 시간
+  - close_time : 진료 종료 시간
+ 
+ LunchTask ( 점심시간 ) 
+  - start_time : 점심 시작 시간
+  - close_time : 점심 종료 시간
+ 
+ 
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/doctor.png)
+
+ Apply_History ( 진료예약정보 )
+  향후 agree_status를 통해 True/False로 History형식으로 남기면서 승인 및 반려를 할수 있도록 구성하였습니다.
+  - patient : 환자 Foreinkey를
+  - doctor : 의사 Foreinkey를
+  - treatment_dt : 진료 요청 날짜 및 시간
+  - agree_status : 의사 승인 상태
 
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/doctor_detail.png)
 
 
 
 ### Apply History 및 설명
-
-
 
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/apply_history.png)
 
