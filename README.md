@@ -150,3 +150,7 @@ docker exec app bash
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/apply_history.png)
 
 ## Request / Reponse 과제 실행 결과
+
+### 문자열 검색 문제
+- 문자열을 입력했을때 데이터에 저장되어 
+
