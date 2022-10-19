@@ -42,8 +42,6 @@ class Doctor(models.Model):
         unique=False,
     )
 
-   
-
 
     def __str__(self):
         return self.doctorname
