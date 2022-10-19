@@ -61,7 +61,7 @@ Backend 개발 환경은 Docker Container 기반으로 실행이 됩니다.
 
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg_main.png)
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg1.png)
-
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/pg_server.png?raw=true)
 
 
 - docker bash
@@ -74,7 +74,7 @@ Backend 개발 환경은 Docker Container 기반으로 실행이 됩니다.
 관리자 계정을 생성하기 위해서는 Docker Container들 중 Django app을 실행한 docker container에 접속을 해야합니다.
 
 ```bash
-docker exec app bash
+docker-compose exec app bash
 ```
 - python manage.py createsuperuser
 - 정보입력 ( 이메일 , 이름 , 패스워드 )
