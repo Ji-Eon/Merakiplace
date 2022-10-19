@@ -174,9 +174,13 @@ docker exec app bash
 #### 진료요청
 - 진료 희망 날짜 시간
   - 환자가 진료가 이루어 지기를 희망하는 날짜와 시간
-  - 의사가 영업시간이 아닌값이 들어오면 '의사의 영업시간이 아님' 을 주는 값 반환
   
     ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_6.png?raw=true)
+  
+  
+  - 의사가 영업시간이 아닌값이 들어오면 '의사의 영업시간이 아님' 을 주는 값 반환
+    
+    ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_11.png?raw=true)
 
 
 
