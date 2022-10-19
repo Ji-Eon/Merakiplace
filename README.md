@@ -52,6 +52,7 @@ Backend 개발 환경은 Docker Container 기반으로 실행이 됩니다.
 **절대!!! 절대!!! 로컬에서 DB를 먼저 생성해서는 안됩니다!!**
 
 - Postgresql 만 설치가 되어있으면 자동적으로 makemigrations, migrate가 되기 때문에 디비를 생성안해도 됨
+- sql파일은 meraki.sql파일도 같이 있습니다. 로컬주소에있는 파일경로를 지정해주시면 됩니다.
 - 서버생성 계정은 
   - server name : meraki_dev
   - host : localhost
@@ -62,6 +63,8 @@ Backend 개발 환경은 Docker Container 기반으로 실행이 됩니다.
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg_main.png)
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg1.png)
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/pg_server.png?raw=true)
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/restore_1.png?raw=true)
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/restore_2.png?raw=true)
 
 
 - docker bash
@@ -191,12 +194,14 @@ docker-compose exec app bash
   [ 시나리오 ] 
     - 진료요청정보를 먼저 DB에 저장을 시킵니다 
     
-![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_9.png?raw=true)
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_8.png?raw=true)
 
   [ 시나리오2 ] 
     - 의사가요청 정보를 확인하여 수학합니다 agree_status  -> False -> True로 변환
+    - apply_id 요청 정보 id 값
+    - status만 true로 반영하여 의사 예약 리스트로 갈수 있도록 
     
-![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_8.png?raw=true)
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/response_9.png?raw=true)
     
   [ 시나리오3 ] 
     - 변환된 결과를 가져와서 반영결과
