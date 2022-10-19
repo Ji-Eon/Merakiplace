@@ -59,7 +59,11 @@ Backend 개발 환경은 Docker Container 기반으로 실행이 됩니다.
   - username : postgres
   - password : postgres
 
-  
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg_main.png)
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg1.png)
+
+
+
 - docker bash
 
 
@@ -75,17 +79,36 @@ docker exec app bash
 - python manage.py createsuperuser
 - 정보입력 ( 이메일 , 이름 , 패스워드 )
 
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/createsuperuser.png)
+
 
 
 ## 세팅 완료된 결과 화면
 
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/django_main.png)
+
+
+
+
 ### Patient Model 및 설명
 
+
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/patient_model.png)
+
+
+
 ### Doctor Model 및 설명
+
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/doctor.png)
+
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/doctor_detail.png)
+
+
 
 ### Apply History 및 설명
 
 
 
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/apply_history.png)
 
 ## Request / Reponse 과제 실행 결과
