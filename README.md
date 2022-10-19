@@ -1,7 +1,5 @@
 <h1 align="center">Welcome to MERAKI Django Web 👋</h1>
 
-
-
 ### Dev Tools
 - VS Code
 - Mac OS
@@ -15,6 +13,12 @@
 - Docker
 - Postgresql
 - rebbitmq
+
+## requirements.txt
+과제를 검토하시는 가운데 혹시나 기존 환경과 다를수 있어 도커라이징을 진행하였습니다.
+제가 사용했던 Python 버전들은 requirements.txt 에 구성되어 있습니다.
+
+
 
 ## 프로젝트 리뷰에 필요한 도구들
 - postman : response / request 결과 확인
