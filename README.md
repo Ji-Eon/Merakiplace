@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to MERAKI Django Web 👋</h1>
+<h1 align="center">Welcome to MERAKI Django Framework 👋</h1>
 
 ### Dev Tools
 - VS Code
