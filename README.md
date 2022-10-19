@@ -40,8 +40,11 @@ Backend 개발 환경은 Docker Container 기반으로 실행이 됩니다.
 ## 실행 및 실행 결과
 
 - 도커 컨테이너가 성공적으로 실행되었다면 [http://localhost:8000/admin/] or [http://0.0.0.0:80000/admin] 에 접속하여 화면과 같은 화면을 보실 수 있습니다.
-- 만약 이 화면이 보이지 않거나 계속 무한루팅 될 경우 dev서버가 정상적으로 작동하지 않는다.
+- 만약 이 화면이 보이지 않거나 계속 무한루팅 될 경우 dev서버가 정상적으로 작동하지 안습니다.
+- 아래 이미지들과 같이 나오면 정상적으로 도커가 완료된것입니다.
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/docker_done.png?raw=true)
 
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/docker_done2.png?raw=true)
 
 ## Data 입력방법
 데이터는 sql 파일을 이용하여 셋팅합니다. 만약 시작전 postgresql 이나 5432 포트를 사용하고있다면 포트를 종료시켜주세요! 
@@ -63,12 +66,9 @@ Backend 개발 환경은 Docker Container 기반으로 실행이 됩니다.
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg_main.png)
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/pg1.png)
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/pg_server.png?raw=true)
-![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/restore_1.png?raw=true)
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/pg_history.png?raw=true)
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/restore_2.png?raw=true)
-
-
-- docker bash
-
+![ininital](https://github.com/Ji-Eon/Merakiplace/blob/main/git_images/restore_1.png?raw=true)
 
 ### Superuser 생성 
 - docker-compose exec app base는 관리자 계정을 생성하거나 Python a명령어를 실행할 수 있는 모드 입니다.
@@ -82,6 +82,7 @@ docker-compose exec app bash
 - python manage.py createsuperuser
 - 정보입력 ( 이메일 , 이름 , 패스워드 )
 
+
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/createsuperuser.png)
 
 
@@ -89,7 +90,6 @@ docker-compose exec app bash
 ## 세팅 완료된 결과 화면
 
 ![ininital](https://github.com/Ji-Eon/Merakiplace/blob/562ca3493e658b851c54fa462961178958ab3721/git_images/django_main.png)
-
 
 
 
